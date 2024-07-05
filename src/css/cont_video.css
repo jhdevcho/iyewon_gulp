@@ -1,0 +1,368 @@
+
+/* 동영상 게시판 관련 */
+
+
+/* 검색 영역 */
+.searchArea{
+    padding: 50px 15px 30px 15px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* 리스트 영역 */
+.listArea{
+    border-top: 1px solid var(--grey-light-color);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.listArea .list{
+    display: block;
+    padding: 25px 20px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.listArea .list .cont{
+    width: 100%;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.listArea .list .cont p.title {
+    display: flex;
+    flex-grow:2;
+}
+.listArea .list .cont p.title span.txt{
+    display: inline-block;
+    font-family: var(--fontfam-title);
+    font-size: var(--font-xlarge);
+    line-height: 22px;
+    padding-right: 10px;
+}
+.listArea.world .list .cont{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.listArea.world .list .cont p.title {
+    width: 100%;
+    display:block;
+}
+.listArea.world .list .cont p.title span.txt{
+    display:inline;
+}
+.listArea .list .cont p span.verses{
+    font-size: var(--font-large);
+}
+.listArea .list .cont p.pastor {
+    font-family: var(--fontfam-m-text);
+    font-size: var(--font-large);
+    line-height:2.0em;
+    padding-right: 20px;
+}
+.listArea .list .cont p.date{    
+    font-size: var(--font-regular);
+    line-height:1.5em;
+}
+.listArea .list .cont p.date.short{    
+    width:130px;
+}
+.moreBtn{
+    padding: 30px 15px;
+}
+.moreBtn button, .moreBtn button:focus{
+    width: 100%;
+    border: 1px solid var(--grey-dark-color);
+    border-radius: 5px;
+    padding: 15px 0;
+    text-align: center;
+}
+/* 뷰 */
+.viewArea{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.viewArea .dataWrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top:30px;
+}
+.viewArea .dataWrap .data0{
+    width: 100%;
+}
+.viewArea .dataWrap .data1{
+    width: 65%;
+}
+.viewArea .dataWrap .data2{
+    width: 35%;
+}
+
+.viewArea .metadata{
+    padding: 30px 15px 0 20px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+.viewArea .metadata p.title{
+    font-family: var(--fontfam-m-text);
+    font-size: 27px;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:10px;
+}
+.viewArea .metadata p.title span.text{
+    padding-right: 10px;
+    font-family:"PretendardSB"
+}
+.viewArea .metadata p.title span.words{
+    font-family: var(--fontfam-regular);
+    font-size: var(--font-large);
+}
+.viewArea .metadata p.whenwho{
+    font-size: 15px;
+}
+.viewArea.news {
+    width:95%;
+    max-width: 800px;
+    padding: 2.0em 0;
+}
+.viewArea.news .title{
+    text-align: center;
+}
+.viewArea .videoplayer{
+    padding: 10px 12px;
+}
+.viewArea .videoplayer .videoWrap{
+    position: relative;
+    padding-bottom: 56.25%;
+    height:0;
+    text-align: center;
+    overflow:hidden;
+}
+.viewArea .videoplayer .videoWrap iframe,
+.viewArea .videoplayer .videoWrap object,
+.viewArea .videoplayer .videoWrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.viewArea .videoplayer .links {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 15px 20px;
+    background-color:var(--black-color);
+    color:white;
+    position:relative;
+    text-align: right;
+    min-height:50px;
+}
+.viewArea .videoplayer .links .fileWrap{
+    position: absolute;
+    width: 80%;
+    height: 22px;
+    left: 0px;
+}
+.viewArea .videoplayer .links.on .fileWrap{
+    overflow:visible;
+}
+.viewArea .videoplayer .links.on button span{
+    display:inline-block;
+    transform:rotate(180deg);
+}
+.viewArea .videoplayer .links .fileWrap .files{
+    display: flex;
+    flex-direction: row;
+    background: var(--black-color);
+    padding-bottom: 10px;
+}
+.viewArea .videoplayer .links .fileWrap .files button{
+    display:none;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+.viewArea .videoplayer .links .files a{
+    font-size: 15px;
+    color:white;
+    font-family: var(--fontfam-regular);
+    padding: 0px 15px;
+    text-align: center;
+    border-left: 1px solid var(--grey-light-color);
+}
+.viewArea .videoplayer .links .files > a:first-of-type{
+    border-left:0px;
+}
+.viewArea .videoplayer .links>a {
+    color:white;
+}
+/* .viewArea .videoplayer .links a{
+    font-family: var(--fontfam-title);
+    border: 1px solid var(--grey-light-color);
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 5px 15px;
+    color:white;
+} */
+/* .viewArea .videoplayer .links a.praycard{
+    border: 1px solid #2BB53E;
+    color: #2BB53E;
+} */
+.viewArea .bible{
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--grey-light-bg-color);
+    border-radius: 10px;
+}
+.viewArea .bible .title{
+    margin-bottom: 10px;
+    padding-left:5px;
+    border-left: 6px solid var(--color-point-green);
+    font-family: var(--fontfam-m-text);
+    font-size:16px;
+}
+.viewArea .bible li{
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+.viewArea .bible span.verse{
+    display: inline-block;
+    min-width: 40px;
+    font-family: var(--fontfam-m-text);
+}
+.viewArea .recordedText{
+    padding:0 20px;
+    height: 500px;
+    overflow-y: hidden;
+}
+.viewArea .recordedText p,
+.viewArea .recordedText span{
+    font-family: var(--fontfam-regular) !important;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.viewArea .moreBtn{
+    padding-top: 15px;
+}
+
+.listWrap.viewer {
+    width: 100%;
+    max-width: 1100px;
+    padding: 10px 0;
+}
+.listWrap.viewer .listSlideWrap{
+    width:100%;
+    border-top: 1px solid var(--grey-light-color);
+    overflow-x:hidden;
+}
+.listWrap.viewer .listSlide{
+    display: flex;
+    flex-direction: column;
+    height: 395px;
+    flex-wrap: wrap;
+}
+.listWrap.viewer a{
+    display:block;
+}
+.listWrap.viewer .list {
+    padding: 0 5px;
+    border-bottom: 1px solid var(--grey-light-color);
+    height: 98px;
+    display: flex;
+    width:100%;
+}
+/* .listWrap.viewer .list:first-child{
+    border-top: 1px solid var(--grey-light-color);
+} */
+.listWrap.viewer .list .cont{
+    width: 100%;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+}
+.listWrap.viewer .list .cont p.date{
+    font-size:18px;
+    min-width:70px;
+    padding:10px;
+    text-align:center;
+    font-family: var(--fontfam-regular);
+    flex-shrink: 0;
+}
+.listWrap.viewer .list.on .cont p.date{
+    font-family: var(--fontfam-title);
+}
+.listWrap.viewer .list .cont .title{
+    flex-shrink: 1;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    border-left:2px solid var(--grey-light-color);
+    padding-left: 10px;
+}
+.listWrap.viewer .list.on .cont .title{   
+    border-color: var(--color-point-pink);
+}
+.listWrap.viewer .list .cont p span.txt{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--fontfam-m-text);
+}
+.listWrap.viewer .list.on .cont p span.txt{
+    font-family: var(--fontfam-m-title);
+    font-size: 19px;
+    line-height: 22px;
+}
+.listWrap.viewer .list .cont p span.verses{
+    font-size: 14px;
+    padding-left:5px;
+}
+.listWrap.viewer .list .cont p span.pastor{
+    font-size: 14px;
+    line-height: 16px;
+}
+.listWrap .btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.listWrap.viewer .moreBtn{
+    padding: 0 10px;
+    display:flex;
+}
+.listWrap.viewer .moreBtn button{
+    width: 100%;
+    border: 1px solid var(--grey-light-color);
+    padding: 5px 10px;
+    margin-right:3px;
+    border-radius: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.listWrap.viewer .moreBtn button.disable{
+    background-color:var(--grey-light-bg-color);
+    color:var(--grey-light-color);
+    cursor:default;
+}
+.listBtn{
+    text-align: right;
+}
+.listBtn a{
+    display: inline-block;
+    font-family: var(--fontfam-title);
+    border: 1px solid var(--grey-light-color);
+    font-size: 14px;
+    padding: 5px 15px;
+    margin-right:10px;
+} 

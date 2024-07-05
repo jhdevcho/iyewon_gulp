@@ -1,0 +1,1968 @@
+
+/* 정보형 페이지 관련 */
+
+.contentWrap{
+    width:100%;
+    font-size: 20px;
+}
+.wrap900{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+}
+.wrapWide{
+    width:100%;
+}
+.fRow{
+    display:flex;
+}
+.fColumn{
+    display:flex;
+    flex-direction: column;
+}
+
+/* em단위 폰트 지정 */
+.h1 {
+    font-family:"PretendardB";
+    font-size: 3.0em;
+    margin-bottom: 0;
+}
+.h2{
+    font-family:"PretendardB";
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+.h2-1{
+    font-family:"PretendardB";
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+.h3{
+    font-family:"PretendardB";
+    font-size: 1.5em;
+    line-height: 2.0em;
+    margin-bottom: 0;
+}
+.h4{
+    font-family:"PretendardB";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.h4-m{
+    font-family:"PretendardM";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.h5{
+    font-family:"PretendardR";
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+.h6{
+    font-family:"PretendardM";
+    font-size: 0.8em;
+    line-height: 1.0em;
+    margin-bottom: 0;
+}
+.h6-r{
+    font-family:"PretendardR";
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.fh1 {
+    font-family:"PretendardB";
+    font-size: 3.0em;
+    line-height: 1.0;
+    margin-bottom: 0;
+}
+.fh2{
+    font-family:"PretendardB";
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+.fh3{
+    font-family:"PretendardB";
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+.fh4{
+    font-family:"PretendardB";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.fh4-m{
+    font-family:"PretendardM";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.fh5{
+    font-family:"PretendardR";
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+.fh6{
+    font-family:"PretendardM";
+    font-size: 0.8em;
+    line-height: 1.0em;
+    margin-bottom: 0;
+}
+.bold{font-weight: bold;}
+
+/* margin */
+.mgt10 {margin-top:0.5em;}
+.mgt20 {margin-top:1.0em;}
+.mgt40 {margin-top:2.0em;}
+.mgt60 {margin-top:3.0em;}
+.mgbt10 {margin-bottom:0.5em;}
+.mgbt20 {margin-bottom:1.0em;}
+.mgbt30 {margin-bottom:1.5em;}
+.mgbt40 {margin-bottom:2.0em;}
+.mgbt60 {margin-bottom:3.0em;}
+.mgbt80 {margin-bottom:4.0em;}
+.pdl10 {padding-left:0.5em;}
+.pdl20px {padding-left:1.0em;}
+.pdt10 {padding-top:0.5em;}
+.pdt20 {padding-top:1.0em;}
+.pdt30 {padding-top:1.5em;}
+.pdt40 {padding-top:2.0em;}
+.pdt60 {padding-top:3.0em;}
+.pdt80 {padding-top:4.0em;}
+.pdbt5 {padding-bottom:0.25em;}
+.pdbt10 {padding-bottom:0.5em;}
+.pdbt20 {padding-bottom:1.0em;}
+.pdbt30 {padding-bottom:1.5em;}
+.pdbt40 {padding-bottom:2.0em;}
+.pdbt60 {padding-bottom:3.0em;}
+.pdbt80 {padding-bottom:4.0em;}
+.pdl10 {padding-left:0.5em;}
+.pdr10 {padding-right:0.5em;}
+.pdl15 {padding-left:0.75em;}
+.pdr15 {padding-right:0.75em;}
+.pdl20 {padding-left:1.0em;}
+.pdr20 {padding-right:1.0em;}
+
+/* align */
+.right{text-align:right;}
+
+/* colored style */
+.green-left{
+    border-left:2px solid var(--color-point-green);
+    padding-left:8px;
+}
+
+/* ////////// 새가족 안내 페이지, 성도혜택 페이지 ////////////////////// */
+.newFam .p, .coramdeo .p{
+    color:var(--black-color);
+}
+.newFam img.writing{
+    width:90%;
+    max-width:492px;
+}
+
+.faqWrap{
+    padding:1.0em 0;
+}
+.faq {
+    width:100%;
+    padding-bottom:0.7em;
+
+}
+.faq .question{
+    border:1px solid var(--grey-light-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    cursor:pointer;
+    padding: 0.3em 0;
+}
+.faq .question .icon{
+    padding:1.0em 1.2em;
+}
+.faq .question .iconQ{
+    width:2.0em;
+    height:2.0em;
+    background-color:var(--black-color);
+    border-radius: 1.0em;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq .question .text {
+    flex-grow:2;
+}
+.faq .question .arrow{
+    padding:0.5em 1.5em 0.5em 1.0em;
+}
+.faq .question .arrow button{
+    /* padding:0.5em 1.5em 0.5em 0.1em; */
+    font-size:0.9em;
+}
+
+
+.faq.open .question{
+    border:0;
+    background-color:var(--color-point-green);
+}
+.faq.open .question .text {
+    color:white;
+}
+.faq.open .question .arrow button{
+    font-size:0.9em;
+    color:white;
+    transform: rotate(180deg);
+    transition: transform 0.2 ease-in-out;
+}
+.faq.open .answer{
+    /* height:auto; */
+    transition: height 0.5s ease-in-out;
+}
+
+.faq .answer{
+    background-color:var(--grey-light-bg-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height:0;
+    overflow:hidden;
+    transition: height 0.5s ease-in-out;
+}
+.faq .answer .icon{
+    padding:1.2em;
+}
+.faq .answer .iconA{
+    width:2.0em;
+    height:2.0em;
+    background-color:var(--color-point-green);
+    border-radius: 1.0em;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq .answer .text{
+    padding:1.5em 1.5em 1.5em 0;
+    flex-grow:2;
+}
+.faqWrap .btnList{
+    border:1px solid var(--color-point-green);
+    padding:5px 10px;
+}
+
+
+/* 장례예배에 쓰인 FAQ 레이아웃 (mono) */
+.faq.mono {
+    width:100%;
+    padding-bottom:0;
+}
+.faq.mono .question{
+    border:0;
+    border-top:1px solid #A5A5A5;
+    padding-left:20px;
+}
+.faq.mono.open .question{
+    border-top: 1px solid #A5A5A5;
+    background-color:white;
+}
+.faq.mono.open .question .text {
+    color:var(--black-color);
+}
+.faq.mono.open .question .arrow button{
+    font-size:0.9em;
+    color:var(--black-color);
+    transform: rotate(180deg);
+    transition: transform 0.2 ease-in-out;
+}
+.faq.mono .answer div{
+    width:100%;
+    border-top:1px solid #A5A5A5;
+    padding:20px;
+}
+.faq.mono .answer p{
+    padding:5px;
+}
+.faqWrap .faq.mono:last-of-type{
+    border-bottom:1px solid #A5A5A5;
+}
+.faq.mono ul{
+    padding-left:20px;
+}
+.faq.mono ul li{
+    list-style:disc;
+    list-style-position: outside;
+    margin-left:10px;
+}
+
+
+.reviewBanner{
+    width:100%;
+    display: flex;
+    background-color: var(--color-point-pink);
+}
+.reviewBanner .img{
+    width:40%;
+    border:1px solid var(--color-point-pink);
+    background-image: url('../images/img_newfam_review.jpg');
+    background-size:cover;
+    background-position:center right;
+    flex-shrink: 2;
+}
+.reviewBanner .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.0em;
+    flex-grow:2;
+    flex-shrink: 0;
+}
+.reviewBanner .text .h2{
+    color:white;
+}
+.reviewBanner .text .h4{
+    text-align: right;
+}
+.reviewBanner .text .h4 i{
+    font-size:1.0em;
+}
+
+.msgList{
+    border-top:1px solid var(--grey-dark-color);
+}
+.msgList li a{
+    border-bottom:1px solid var(--grey-dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.msgList li .img{
+    padding:0.5em 0;
+}
+.msgList li .img img{   
+    display: block; 
+    width:20vw;
+    max-width:150px;
+}
+.msgList li .text{
+    padding:0 1.0em;
+    flex-grow: 2;
+}
+.msgList li .arrow{
+    padding-right:0.8em;
+}
+.msgList li .arrow i{
+    color:var(--color-point-green);
+}
+
+.greenBox{
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color:var(--green-color);
+}
+.coramdeo .greenBox{
+    align-items: center;
+}
+.greenBox .greenLeft{
+    color:white;
+    padding: 2.5em 2.0em;
+}
+.greenBox .btnBenefit{
+    border: 1px solid var(--green-dark-color);
+    background-color: var(--green-deep-color);
+    padding:10px;
+    margin-top:10px;
+    color:white;
+    width:150px;
+    text-align:center;
+}
+.greenBox .greenRight{
+    background-color:var(--color-point-green);
+    color:white;
+    padding: 3.0em 2.0em;
+    text-align:right;
+    display:flex;
+    flex-direction: column;
+}
+.greenBox .greenRight span{
+    display:block;
+}
+
+.pinkBox{
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color:var(--color-point-pink);
+}
+.pinkBox .pinkLeft{
+    color:white;
+    padding: 2.5em 2.0em;
+}
+.pinkBox .pinkRight{
+    background-color:var(--pink-color);
+    color:white;
+    padding: 2.5em 2.0em;
+    text-align:right;
+    display:flex;
+    flex-direction: column;
+}
+.pinkBox .pinkRight span{
+    display:block;
+}
+.pinkBox .bold{
+    padding-right:5px;
+}
+.pWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pWrap.apply {
+    align-items:flex-start;
+}
+.pWrap.apply .pink{
+    color:var(--pink-color);
+    flex-grow:0;
+}
+.pWrap.apply .text{
+    flex-grow: 2;
+    padding-left:10px;
+}
+
+
+.wrapWide.green{
+    background-color:var(--color-point-green) !important;
+}
+.wrapWide .new_links{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    padding: 40px 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapWide .new_links .linkLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wrapWide .new_links .linkLeft .h3,.wrapWide .new_links .linkLeft .fh3{
+    color:white;
+}
+.wrapWide .new_links .h3 span{
+    font-family: "PretendardB";
+}
+.wrapWide .new_links .linkLeft .counsel{
+    background-color:var(--black-color);
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+}
+.wrapWide .new_links .linkLeft .counsel i{
+    color: var(--color-point-green);
+}
+.wrapWide .new_links .linkRight {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.wrapWide .new_links .linkRight .greenBtn {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid var(--green-dark-color);
+    background-color: var(--green-deep-color);
+    padding: 10px 20px;
+    color:white;
+}
+.wrapWide .new_links .linkRight .greenBtn img {
+    height:1.8em;
+}
+.contentWrap.ywFam .h1 span{font-family: 'PretendardB';}
+.contentWrap.ywFam .benefit{
+    border-top:1px solid var(--grey-light-color);
+    padding-bottom:150px;
+}
+.contentWrap.ywFam .benefit li{
+    border-bottom:1px solid var(--grey-light-color);
+    padding:40px 0;
+    display: flex;
+    align-items: center;
+}
+.contentWrap.ywFam .benefit li .img{
+    background-size:cover;
+    width:100%;
+    max-width:341px;
+    height:192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:1.5em;
+}
+.contentWrap.ywFam .benefit li .img.b01{
+    background-image:url('../images/img_benefit_01.png');
+}
+.contentWrap.ywFam .benefit li .img.b02{
+    background-image:url('../images/img_benefit_02.png');
+}
+.contentWrap.ywFam .benefit li .img.b03{
+    background-image:url('../images/img_benefit_03.png');
+}
+.contentWrap.ywFam .benefit li .img.b04{
+    background-image:url('../images/img_benefit_04.png');
+}
+.contentWrap.ywFam .benefit li .img p,.contentWrap.ywFam .benefit li .img p span{
+    color:white;
+    line-height:1.2em;
+}
+.contentWrap.ywFam .benefit li .text{
+    padding-left:40px;
+}
+.contentWrap.ywFam .benefit li .text p{
+    line-height:1.5em;
+}
+
+
+/* ///////// 청년선교회 페이지 ///////////////// */
+
+.coramdeo img.writing{
+    width: 50%;
+    max-width: 209px;
+}
+.coramdeo .videoLink{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;    
+    align-items: center;
+    background-color:#141414;
+}
+.coramdeo .videoLink .thumb{
+    width:45%;
+    max-width:363px;
+    flex-shrink:1;
+}
+.coramdeo .videoLink .thumb img{
+    width:100%;
+    max-width:363px;
+    display: block;
+}
+.coramdeo .videoLink .exp{
+    display: flex;
+    width:55%;
+    padding: 1.0em 2.0em;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#141414;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+.coramdeo .videoLink .exp p{
+    color:white;
+    font-family:"Pretendard";
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
+.coramdeo .wrapWide {
+    background-color: var(--grey-light-bg-color);
+}
+.coramdeo .wrapWide .links{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    padding: 40px 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coramdeo .wrapWide .links a{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:30%;
+    border:1px solid #434343;
+    padding: 1.2em;
+}
+.coramdeo .wrapWide .links a p{
+    padding-left:15px;
+    font-family: 'PretendardSB';
+    font-size: 0.8em;
+}
+.greenBox .title{
+    color:white;
+    background-color: var(--color-point-green);
+    width:25%;
+    text-align:center;
+    padding:70px 0;
+}
+.greenBox .exp{
+    color:white;
+    width:75%;
+    padding-left:40px;
+    font-size:0.85em;
+}
+.green-right {
+    display: inline-block;
+    width:2.0em;
+    /* padding-right:10px; */
+    margin-right:0.4em;
+    border-right:2px solid #1BFF3A;
+}
+.coramdeo .split{
+    display:flex;
+    align-items: flex-start;
+}
+.coramdeo .green-right{
+    flex:0 0 1.9em;
+}
+
+
+/* ////////// I'm New 페이지 ////////////////////// */
+
+.language {
+    padding:20px 0;
+    font-size:1.0em;
+    width:100%;
+    height: 90px;
+    display:flex;
+    justify-content: flex-end;
+}
+.language .comboWrap{
+    position:relative;
+    width:180px;
+}
+.language .combobox{
+    border:1px solid var(--grey-light-color);
+    width:180px;
+    height:50px;
+    overflow:hidden;
+    /* position:absolute; */
+    background-color:white;
+    font-size:1.0em;
+}
+.language .combobox.open{
+    height:auto;
+}
+.language .combobox ul{
+    display:flex;
+    text-align:left;
+    flex-wrap: wrap;
+    width:100%;
+}
+.language .combobox ul li{
+    display:flex;
+    align-items: center;
+    width:100%;
+    cursor:pointer;
+    padding:10px 15px;
+}
+.language .combobox ul li:hover{
+    background-color:var(--grey-dark-color);
+    color:white;
+}
+.language .combobox .nation{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+}
+.language .combobox .nation img{
+    width:100%;
+}
+.language .combobox>span{
+    position:absolute;
+    top:18px;
+    right:10px;
+}
+.language select {
+    padding:5px 10px 5px 30px;
+    font-size:0.8em;
+    background-image:url('../images/icon_nation_america.png');
+    background-size:30px 30px;
+    background-repeat:no-repeat;
+}
+.language select option {
+    background-image:url('../images/icon_nation_america.png');
+    background-size:30px 30px;
+    background-repeat:no-repeat;
+}
+
+.imNew.off {display:none;}
+.imNew .top{
+    background-image:url('../images/img_imnew_top.jpg');
+    background-size:cover;
+    padding:1.0em 1.5em;
+    color:white;
+    width:100%;
+    height:18em;
+}
+.imNew .top{
+    background-image:url('../images/img_imnew_top.jpg');
+    background-size:cover;
+    background-position: center center;
+    padding:1.0em 1.5em;
+    color:white;
+    width:100%;
+    height:18em;
+}
+.imNew .introduce {
+    padding-bottom:4.5em;
+}
+.imNew .wrapWide{
+    background-color:var(--grey-light-bg-color);
+}
+.imNew .wrapWide .info{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    padding:130px 0 150px;
+}
+.imNew .wrapWide .info span.pink-right{
+    padding-right:10px;
+    margin-right:10px;
+    border-right:4px solid var(--color-point-pink);
+    line-height:2.0em;
+    font-family: 'PretendardB';
+    font-size: 1.2em;
+}
+
+.imNew .worship{
+    width:100%;
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding:20px 0;
+}
+.imNew .worship .img{
+    padding-right:30px;
+} 
+.imNew .worship .img img{
+    width:100%;
+    max-width:340px;
+} 
+.imNew .worship .text .fh5{
+    display:flex;
+    align-items: top;
+}
+.imNew .worship .text .fh5 span:first-child{
+    flex-shrink: 0;
+    flex: 0 0 5.1em;
+}
+.imNew .worship .text .fh5 span:last-child{
+    padding:5px 0;
+}
+.imNew .info .worship span.pink-right{
+    padding-right:10px;
+    margin:5px 10px;
+    border-right:4px solid var(--color-point-pink);
+    line-height:1.0em;
+    display:inline-block;
+    font-family: 'PretendardB';
+}
+.imNew .worship .msgBtn{
+    display: flex;
+    width:200px;
+    align-items: center;
+    justify-content: space-around;
+    border:1px solid var(--black-color);
+    padding: 5px 10px;
+    margin-top:10px;
+}
+.imNew .worship .msgBtn img{
+    height:22px;
+}
+
+.imNew .wrapWide .info .line-top{
+    border-top:1px solid var(--grey-text-color);
+}
+
+.imNew .platform{
+    width:100%;
+    display:flex;
+    align-items: flex-start;
+    padding-bottom:20px;
+}
+.imNew .platform .img{
+    padding-right:30px;
+    width:40%;
+} 
+.imNew .platform .img img{
+    width:100%;
+    max-width:340px;
+} 
+.imNew .platform .text{
+    width:60%;
+}
+.imNew .platform .green-left{
+    border-left:2px solid var(--color-point-green);
+    padding-left:5px;
+    margin: 12px 0;
+    line-height:0.8em;
+}
+.imNew .platform .fh6{
+    padding-left:10px;
+}
+
+
+
+/* ///////// 교회소개 페이지 //////////////////// */
+.church .vision5{
+    width:100%;
+    display:flex;
+    align-items: center;
+    padding-bottom:100px;
+}
+.church .vision5 .img{
+    width:45%;
+    max-width:370px;
+    padding-right:1.5em;
+}
+.church .vision5 .img img{
+    width:100%;
+}
+.church .wrapWide {
+    background-color:var(--beige-color);
+}
+.church .pastorIntro{
+    width:100%;
+    display:flex;
+    align-items: center;
+    padding-top:3.0em;
+    padding-bottom:4.0em;
+}
+.church .pastorIntro .text{
+    width:50%;
+}
+.church .pastorIntro .img{
+    width:50%;
+    max-width:393px;
+    padding-right:1.5em;
+}
+.church .pastorIntro .img img{
+    width:100%;
+}
+.church .pastorProfile{
+    width:100%;
+    display:flex;
+    align-items: center;
+    padding-bottom:3.0em;
+}
+.church .pastorProfile .text{
+    width:45%;
+    margin-left:40px;
+}
+.church .pastorProfile .img{
+    width:53%;
+    max-width:456px;
+    position:relative;
+    font-size:0;
+}
+.church .pastorProfile .img img{
+    width:100%;
+}
+.church .pastorProfile .img .btn{
+    position:absolute;
+    width:160px;
+    height:160px;
+    right:0;
+    bottom:0;
+    background-color:var(--color-point-pink);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:15px;
+}
+.church .pastorProfile .img .btn p{
+    font-family: "PretendardSB";
+    font-size:18px;
+    color:white;
+    text-align: right;
+}
+
+.church .booksWrap{
+    width:100%;
+    overflow-x:scroll;
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+    /* scroll-behavior: smooth; */
+    padding-bottom:100px;
+}
+.church .booksWrap::-webkit-scrollbar{
+    display: none;  /* Chrome, Safari, Opera */
+}
+.church .booksWrap .books{
+    display:flex;
+}
+.church .booksWrap .books .book{
+    border:1px solid var(--grey-light-color);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:193px;
+    background-color:white;
+    padding:8px;
+    margin-right:20px;
+    cursor:pointer;
+}
+.church .booksWrap .books .book .img{
+    width:177px;
+    height:225px;
+    display:flex;
+    align-items: center;
+}
+.church .booksWrap .books .book .img img{
+    width:100%;
+}
+.church .booksWrap .books .book .text{
+    padding:6px;
+}
+.church .booksWrap .book .info{    
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+}
+.church .historyWrap{
+    width:100%;
+    overflow-x:scroll;
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+    /* scroll-behavior: smooth; */
+    margin-bottom:200px;
+    padding-top:50px;
+    cursor:pointer;
+}
+.church .historyWrap::-webkit-scrollbar{
+    display: none;  /* Chrome, Safari, Opera */
+}
+.church .historyWrap .history{
+    width:3900px;
+    display:flex;
+}
+.church .historyWrap .history .card{
+    width:205px;
+    height:205px;
+    color:white;
+    background-image: url('../images/img_history_01.png');
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+}
+.church .historyWrap .history .card.c2{
+    background-image: url('../images/img_history_02.png');
+}
+.church .historyWrap .history .card.c3{
+    background-image: url('../images/img_history_03.png');
+}
+.church .historyWrap .history .card.c4{
+    background-image: url('../images/img_history_04.png');
+}
+.church .historyWrap .history .year{
+    width:175px;
+}
+.church .historyWrap .history .year p.h4{
+    font-family:'PretendardXB';
+    padding-left:10px;
+}
+.church .historyWrap .history .year p.h6{
+    line-height:1.4em;
+    padding:10px;
+}
+.church .historyWrap .history .year .line{
+    width:100%;
+    height:8px;
+    background-image:url('../images/img_history_line.png');
+    background-repeat: no-repeat;
+}
+
+
+/* 예배 안내 페이지 */
+.schedule .table{
+    display:flex;
+    flex-direction: column;
+    border-top: 1px solid var(--black-color);
+    border-bottom: 1px solid var(--black-color);
+}
+.schedule .table .tr{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.schedule .table .tr:last-child{
+    border:0;
+}
+.schedule .table .tr .td{
+    font-size: 16px;
+}
+.schedule .table .tr .td_right{
+    display:flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left:30px;
+}
+.schedule .table .tr .td.what{
+    /* text-align:center; */
+    padding-left:20px;
+    font-weight: bold;
+    border-right: 2px solid var(--color-point-green);
+}
+/* .schedule .table .tr .td.when{
+    padding-left: 30px;
+} */
+.schedule .table.type1 .td.what{
+    flex: 0 0 62px;
+}
+.schedule .table.type1 .td.when{
+    flex: 0 1 500px;
+}
+.schedule .table.type1 .td.where{
+    flex: 1 1 auto;
+}
+.schedule .table.type2 .td.what{
+    flex: 0 0 106px;
+}
+.schedule .table.type2 .td.when{
+    flex: 0 1 300px;
+}
+.schedule .table.type2 .td.where{
+    flex: 1 1 auto;
+}
+.schedule .table.type3 .td.what{
+    flex: 0 0 170px;
+}
+.schedule .table.type3 .td.when{
+    flex: 0 2 200px;
+}
+.schedule .table.type3 .td.where{
+    flex: 1 1 auto;
+}
+.schedule .table.type4 .td.what{
+    flex: 0 0 140px;
+}
+.schedule .table.type4 .td.when{
+    flex: 0 1 200px;
+}
+.schedule .table.type4 .td.where{
+    flex: 1 1 auto;
+}
+.schedule .table.type5 .td.what{
+    flex: 0 0 140px;
+}
+.schedule .table.type5 .td.when{
+    flex: 0 1 200px;
+}
+.schedule .table.type5 .td.where{
+    flex: 1 1 auto;
+}
+
+
+/* 섬기는 분들 */
+.servant .wrapWide{
+    background-color: var(--grey-light-bg-color);
+}
+.servant .wrap900{
+    padding: 50px 0;
+}
+.servant>.wrap900:first-child{
+    padding: 0;
+}
+.servant .wrap_card{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.servant .wrap_card .card{
+    padding:3% 4% ;
+    max-width:224px;
+    background:transparent;
+    border:0;
+}
+.servant .wrap_card.big{
+    justify-content: flex-start;
+    align-items: center;
+}
+.servant .wrap_card.big .card{
+    max-width:320px;
+}
+.servant .wrap_card.big .exp{
+    padding-left:30px;
+    padding-top:50px;
+}
+.servant .wrap_card .card.wide{
+    padding:3% 0 3% 4% ;
+    margin-right: 2%;
+}
+.servant .wrap_card .card .title{
+    font-size:1.4em;
+    border-bottom: 2px solid var(--black-color);
+    margin-bottom: 1.0em;
+}
+.servant .wrap_card .card .img{
+    width: 147px;
+    /* height: 186px; */
+}
+.servant .wrap_card.big .card .img{
+    width: 250px;
+    /* height: 346px; */
+}
+.servant .wrap_card .card .img img{
+    width:100%;
+}
+.servant .wrap_card .card p.name{
+    padding:5px 0;
+    font-size:0.85em;
+    font-family: "PretendardM";
+}
+.servant .wrap_card .card.big p.name{
+    font-size:1.0em;
+    line-height: 2.0em;
+}
+.servant .wrap_card .card p.h6{
+    text-align: right;
+    padding-top:8px;
+    border-top:1px solid var(--color-point-green);
+    max-width:148px;
+    height: 50px;
+    line-height: 1.2em;
+}
+
+/* 섬기는이 - 장로 */
+.elders .wrapWide{
+    background-color: var(--grey-light-bg-color);
+}
+.elders .title{
+    padding-bottom: 10px;
+}
+.elders .title .h3{
+    padding-bottom:8px;
+    border-bottom: 2px solid var(--black-color);
+}
+.elders .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.elders .list li{
+    width: 95px;
+    padding: 0.5em;
+    font-size: 0.85em;
+}
+.elders .list li.grow{
+    flex-grow: 1;
+}
+
+/* 섬기는이 - 직원 */
+
+.office .table{
+    display:flex;
+    flex-direction: column;
+    border-top: 1px solid var(--black-color);
+    border-bottom: 1px solid var(--black-color);
+}
+.office .table .tr{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.office .table .tr:last-child{
+    border:0;
+}
+.office .table .tr .td{
+    font-size: 16px;
+}
+.office .table .tr .td_right{
+    display:flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left:30px;
+}
+.office .table .tr .td.what{
+    /* text-align:center; */
+    padding-left:20px;
+    font-weight: bold;
+    border-right: 2px solid var(--color-point-green);
+    flex: 0 0 130px;
+}
+.office .table .td.when{
+    flex: 0 1 200px;
+}
+.office .table .td.where{
+    flex: 1 1 auto;
+}
+
+/* 교구/전도회 */
+.church_group .img01 img{
+    width:100%;
+    max-width: 421px;
+    vertical-align: middle;
+    padding-bottom:5px;
+}
+.church_group .img01 img:first-child{
+    margin-right:0.5em;
+}
+.church_group .writing1{
+    width:100%;
+    max-width: 148px;
+}
+.church_group .writing2{
+    width:100%;
+    max-width: 346px;
+}
+.church_group .emphasis{
+    display: flex;
+    align-items: stretch;
+    padding: 1.0em 0;
+    font-weight: bold;
+}
+.church_group .emphasis .title{
+    background-color: #4DC75E;
+    padding:1.5em 2.0em;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+    flex-shrink: 0;
+}
+/* .edu_inst .emphasis .title img{
+    padding-right:10px;
+} */
+.church_group .emphasis .exp{
+    flex-grow: 1;
+    background-color: #63D172;
+    padding:1.5em 2.0em;
+    font-family: "PretendardSB";
+    color:white;
+    display:flex;
+    align-items: center;
+}
+
+/* 교회시설 */
+.facilities img.map{
+    width:100%;
+}
+.facilities .buildings{
+    display: inline-block;
+    border-left: 1px solid var(--grey-light-color);
+    border-top: 1px solid var(--grey-light-color);
+    font-size:0;
+    line-height: 0;
+    margin: 50px 0 30px 0;
+}
+.facilities .buildings button{
+    font-family: "PretendardM";
+    font-size:20px;
+    width: 120px;
+    height: 50px;
+    border-right: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.facilities .buildings button.bd01:hover, .facilities .buildings button.bd01.on{
+    color:white;
+    background-color: #47CAD0;
+}
+.facilities .buildings button.bd02:hover, .facilities .buildings button.bd02.on{
+    color:white;
+    background-color: #FF8787;
+}
+.facilities .buildings button.bd03:hover, .facilities .buildings button.bd03.on{
+    color:white;
+    background-color: #FFB927;
+}
+.facilities .floor {display: none;}
+.facilities .floor.on{display:block;}
+.facilities .floor li{
+    display:flex;
+    padding-bottom:5px;
+}
+.facilities .floor li .num{
+    flex:0 0 120px;
+    background-color:var(--black-color);
+    font-size:0.85em;
+    color:white;
+    padding:15px 0;
+    text-align: center;
+}
+.facilities .floor li .exp{
+    flex:0 1 100%;
+    font-size:0.85em;
+    color:white;
+    padding:15px 40px;
+}
+.facilities .floor.bd01 li .exp{
+    background-color:#47CAD0;
+}
+.facilities .floor.bd02 li .exp{
+    background-color:#FF8787;
+}
+.facilities .floor.bd03 li .exp{
+    background-color:#FFB927;
+}
+
+/* 오시는 길 */
+.cont_map .maps{
+    display: flex;
+}
+.cont_map .church_map{
+    /* width:50%; */
+    width:100%;
+    padding:20px;
+}
+.cont_map .parking_map{
+    width:50%;
+    padding:20px;
+}
+.cont_map .parking_map img{
+    width:100%;
+}
+.cont_map .path{
+    border-bottom:1px solid var(--grey-text-color);
+    padding:20px 0;
+    display: flex;
+    align-items:center;
+}
+.cont_map .path:last-child{
+    border-bottom:0;
+}
+.cont_map .path>.img{
+    flex:0 0 95px;    
+    padding:0 25px 0 6px;
+}
+.cont_map .path>.img img{
+    width:100%;
+}
+.cont_map .title{
+    font-weight: bold;
+    padding-right:15px;
+    flex:0 0 auto;
+}
+.cont_map .fColumn{
+    display: flex;
+    flex-direction: column;
+}
+.cont_map .fRow{
+    display: flex;
+    flex-direction: row;
+    padding-bottom:5px;
+}
+.cont_map .line9{
+    display: inline-block;
+    background-color: #DEAA3D;
+    color:white;
+    padding:3px 10px;
+    border-radius:15px;
+    margin-right:10px;
+}
+.cont_map .line5{
+    display: inline-block;
+    background-color: #9C61D8;
+    color:white;
+    padding:3px 10px;
+    border-radius:15px;
+    margin-right:10px;
+}
+.cont_map .fRow>.h6 {flex:0 0 auto;}
+.cont_map .fColumn>.title{
+    padding-bottom:5px;
+}
+.cont_map .bus{
+    padding-right:5px;
+}
+.cont_map .bus.grey{
+    color:#B3B3B3;
+}
+.cont_map .bus.blue{
+    color:#34AAFF;
+}
+.cont_map .bus.green{
+    color:#34CA27;
+}
+.cont_map .bus.red{
+    color:#FF4C34;
+}
+.cont_map .bus.airport{
+    color:#292929;
+}
+.greenBox .brightBox{
+    background-color: #9CFFA5;
+    padding:5px;
+    color:var(--black-color);
+    text-align:center;
+    line-height:1.0em;
+}
+.cont_map .greenBox .greenLeft .fRow{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont_map .greenBox .greenLeft .fRow .h3{
+    padding-right:10px;
+}
+
+/* 교육기관 - 주일학교 */
+html {
+    scroll-behavior: smooth;
+}
+.sunday_school .h5{
+    line-height: 1.6em;
+}
+.sunday_school .fixed_illust{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -500px;
+    right:calc(50vw - 450px);
+    z-index:90;
+    /* background-color:rgba(0,0,0,0.1);
+    padding: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px; */
+}
+/* .sunday_school .fixed_illust img{
+    box-shadow:5px 5px 5px 5px;
+} */
+/* .sunday_school .fixed_illust .sec02_img{
+    margin-left:-9px;
+}
+.sunday_school .fixed_illust .sec03_img{
+    margin-left:2px;
+} */
+.sunday_school .fixed_illust_bt{
+    display: none;
+    width:100%;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    padding:40px 10px 10px 10px;
+    z-index:90;
+    transition: opacity 0.5s;
+    opacity:0;
+    background:url('../images/img_bg_gradient_white.png');
+    background-repeat:repeat-x;
+    background-position:top left
+    /* background: linear-gradient(to top, rgba(255,255,255,1.0), rgba(255,255,255,0.8), rgba(255,255,255,0.6), rgba(255,255,255,0.0)); */
+}
+.sunday_school .fixed_illust_bt img{
+    width: 100%;
+}
+.sunday_school .illust_top{
+    width:100%;
+    max-width:520px;
+}
+.sub_navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.sub_navi a{
+    width:33%;
+    padding:15px 10px;
+    background-color: #d9d9d9;
+    font-family: "PretendardSB";
+    font-size: 1.0em;
+    line-height: 1.2em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sub_navi a span{
+    font-family: "PretendardSB";
+}
+.sub_navi a.on{
+    background-color: #63D172;
+    color:white;
+}
+.sunday_school .wrapWide{
+    background-color: var(--grey-light-bg-color);
+}
+.sunday_school .wrap900{    
+    padding-top:1px;
+    padding-bottom: 100px;
+    padding-right:100px;
+}
+.sunday_school .wrap900.navi{    
+    padding-right:0;
+}
+.sunday_school .wrap900.no1{    
+    padding-top:50px;
+    padding-bottom: 200px;
+}
+.sunday_school .wrap900.no2{    
+    padding-top:1px;
+    padding-bottom: 160px;
+}
+.sunday_school .wrap900.no3{    
+    padding-top:1px;
+    padding-bottom: 160px;
+}
+.sunday_school .wrap900.no4{    
+    padding-top:1px;
+    padding-bottom: 200px;
+}
+.sunday_school .wrap900.no5{    
+    padding-top:1px;
+    padding-bottom: 200px;
+}
+.sunday_school .illust.no1{
+    width:100%;
+    height:110px;
+    background-image:url("/images/illust_rt_01.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.sunday_school .illust.no2{
+    width:100%;
+    height:198px;
+    background-image:url("/images/illust_rt_02.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: -140px;
+}
+.sunday_school .illust.no3{
+    width:100%;
+    height:198px;
+    background-image:url("/images/illust_rt_03.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: -140px;
+}
+.sunday_school .illust.no4{
+    width:100%;
+    height:194px;
+    background-image:url("/images/illust_rt_04.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: -140px;
+}
+.sunday_school .illust.no5{
+    width:100%;
+    height:169px;
+    background-image:url("/images/illust_rt_05.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: -120px;
+}
+.sunday_school .infos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sunday_school .infos img{
+    width:100%;
+    max-width:376px;
+    margin-right:30px;
+}
+.sunday_school .infos .meta{
+    flex-grow: 1;
+}
+.sunday_school .infos .meta p.h5{
+    border-left: 2px solid var(--color-point-green);
+    line-height:1.0em;
+    padding:0 10px;
+    margin: 15px 0;
+}
+.sunday_school .infos .meta p.h5 b{
+    padding-right:5px;
+}
+.sunday_school .infos .meta p.h5:nth-child(3){
+    max-width:394px;
+    display:flex;
+    flex-wrap:wrap;
+    line-height:1.4em;
+}
+.sunday_school .infos .meta .btns{
+    display: flex;
+    padding:15px 0;
+}
+.sunday_school .infos .meta .btns a{
+    background-color: #FF8787;
+    color:white;
+    padding:10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 10px;;
+    width: intrinsic; /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content; /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    width: max-content;
+}
+.sunday_school .place{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.sunday_school .place .title{
+    background-color: #4DC75E;
+    color:white;
+    padding:20px;
+    display:flex;
+    align-items: center;
+}
+.sunday_school .place .title img{
+    padding-right:10px;
+}
+.sunday_school .place .exp{
+    flex-grow: 1;
+    background-color: #63D172;
+    color:white;
+    padding:20px;
+}
+
+/* 교회부설 교육기관 */
+
+.edu_inst .wrapWide{
+    background-color:var(--grey-light-bg-color);
+}
+.edu_inst .h1 span{
+    font-size:35px;
+    font-weight: bold;
+}
+.edu_inst .emphasis{
+    display: flex;
+    align-items: stretch;
+    padding: 1.5em 0;
+    font-weight: bold;
+}
+.edu_inst .emphasis .title{
+    background-color: #FFCB67;
+    padding:1.5em 3.0em;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+/* .edu_inst .emphasis .title img{
+    padding-right:10px;
+} */
+.edu_inst .emphasis .exp{
+    flex-grow: 1;
+    background-color: #FFDC99;
+    padding:1.5em 3.0em;
+}
+.edu_inst .emphasis.green .exp{
+    background-color: var(--color-point-green);
+    color:white;
+    font-weight: normal;
+    font-family: "PretendardSB";
+    text-align: center;
+}
+.edu_inst .fRow{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.edu_inst .fRow .img{
+    width:100%;
+    max-width: 328px;
+    text-align:center;
+    flex-shrink: 0;
+}
+.edu_inst .fRow .img img{
+    width:100%;
+}
+.edu_inst .fRow .exp{
+    flex-grow: 1;
+    padding:10px 0 20px 20px;
+}
+.blt_square{
+    display: flex;
+    margin-bottom: 5px;
+}
+.blt_square div{
+    width:18px;
+    height:11px;
+    background-color:var(--black-color);
+}
+.blt_square .red{
+    background-color:#ff6161;
+}
+.blt_square .green{
+    background-color:var(--color-point-green);
+}
+.blt_square .blue{
+    background-color:#0084C3;
+}
+.edu_inst .fRow .img2{
+    width:49%;
+}
+.edu_inst .fRow .img2 img{
+    width:100%;
+}
+.edu_inst .fRow.gls{
+    flex-wrap: nowrap;
+}
+img.writing.yeskids {
+    width:92%;
+    max-width:185px;
+}
+img.writing.yss {
+    width:92%;
+    max-width:402px;
+}
+img.writing.gls {
+    width:92%;
+    max-width:414px;
+}
+
+/* 어린이 문화교실 */
+.cultural_class .wrapWide{
+    background-color:var(--grey-light-bg-color);
+}
+.cultural_class img.writing {
+    width: 80%;
+    max-width: 280px;
+}
+.cultural_class .fRow{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cultural_class .wrap900:nth-child(1) .fRow{
+    flex-wrap: wrap-reverse;
+}
+.cultural_class .fRow .img{
+    width:100%;
+    max-width:406px;
+    flex-shrink: 1;
+}
+.cultural_class .fRow .img img{
+    width:100%;
+}
+.cultural_class .exp{
+    width:100%;
+    max-width:460px;
+    flex-shrink: 1;
+}
+.cultural_class .exp.r_side{
+    padding-left:1.5em;
+}
+.cultural_class .exp.l_side{
+    padding-right:1.5em;
+}
+.cultural_class .exp .h3{
+    background-image:url('../images/icon_leaf_01.svg');
+    background-repeat: no-repeat;
+    background-position: -10px 5px;
+    padding-left:45px;
+}
+.cultural_class .exp div{
+    font-size: 0.85em;
+    margin: 10px 0;
+}
+.cultural_class .exp div b{
+    display:inline-block;
+    padding-right: 10px;
+    border-right: 2px solid var(--color-point-green);
+    margin-right: 8px;
+    font-size: 0.85em;
+}
+
+/* office */
+
+.info_box{
+    display: flex;
+    align-items: stretch;
+}
+.info_box .info_txt{
+    background-color:var(--black-color);
+    color:white;
+    padding: 30px;
+    flex-grow: 2;
+}
+.info_box .info_btn{
+    display:flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.info_box .info_btn .btn{
+    background-color:var(--color-point-green);
+    color:white;
+    padding: 20px 20px 20px 50px;
+    text-align:right;
+    border-radius: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info_box .info_btn .btn:nth-child(2){
+    border-top:1px solid var(--black-color);
+}
+.office .wrapWide{
+    background-color:var(--grey-light-bg-color);
+}
+.office .table.type6 .tr .td.what{
+    flex:0 0 200px;
+}
+.office img.offering{
+    width:100%;
+    max-width:640px;
+}
+
+
+/* 장례예배 안내 */
+.ministry .writing{
+    width: 80%;
+    max-width:fit-content;
+}
+.ministry .title_img{
+    width: 100%;
+    max-width:fit-content;
+}
+.ministry .slogan{    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ministry .slogan .black{
+    background-color: var(--black-color);
+    color: white;
+    padding: 30px;
+    width:100%;
+    max-width:420px;
+    min-height: 385px;
+}
+.ministry .slogan .black .top_bar{
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+.ministry .slogan .green{
+    background-color: var(--color-point-green);
+    color: white;
+    padding: 30px;
+    width:100%;
+    max-width:420px;
+    min-height: 385px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ministry .wrapWide{
+    background-color:var(--grey-light-bg-color);
+    padding:4em 0;
+    margin:4em 0;
+}
+.ministry .h4.green-left, .ministry .h5.green-left{
+    line-height:1.0;
+}
+.ministry .flow{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ministry .flow .square{
+    width:160px;
+    height:80px;
+    border:1px solid #d7d7d7;
+    border-radius: 5px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 20px 0;
+}
+.ministry .flow .square .h5{
+    font-family: "PretendardSB";
+}
+.ministry .flow img{
+    padding: 0 1.0em;
+}
+.ministry .fRow {
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ministry .fRow.photo{
+    justify-content: space-evenly;
+}
+.ministry .fRow.photo .fColumn{
+    padding-bottom:20px;
+}
+.ministry .fRow.photo .fColumn img{
+    width:100%;
+    max-width: 410px;
+}
+.ministry ul {
+    margin-left:20px;
+}
+.ministry ul li{
+    font-size:0.8em;
+    list-style-type: "- ";
+    list-style-position: outside;
+    line-height:1.5;
+}
+.ministry .imgS{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ministry .imgS img{
+    width:49%;
+    max-width:220px;
+    padding-bottom:0.5em;
+}
+.ministry .imgM{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ministry .imgM img{
+    width:100%;
+    max-width:290px;
+    padding-bottom:0.5em;
+}
+.ministry .pinkBox{
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2.0em;
+    flex-wrap: wrap;
+}
+.ministry .pinkBox .h5, .ministry .pinkBox .h5 span{    
+    font-family:"PretendardSB";
+}
+.ministry ul.number li{
+    font-size: 0.85em;
+    list-style-type: decimal;
+}
+.pink_btn, .pink_btn:focus {
+    background-color:#FF8787;
+    font-size:0.8em;
+    color:white;
+    display:flex;
+    align-items: center;
+    padding:10px 30px;
+    border-radius:25px;
+}
+.ministry .sb{
+    font-family:"PretendardSB";
+}
+.ministry .img img{
+    width:100%;
+    max-width: fit-content;
+}
