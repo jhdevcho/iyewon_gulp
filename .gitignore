@@ -1,1 +1,10 @@
+# node modules
 node_modules
+
+
+# distributed files
+dist
+
+
+# Editor directories and files
+.vscode/*

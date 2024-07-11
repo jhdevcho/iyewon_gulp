@@ -1,0 +1,91 @@
+
+<% if(cate==='01') { %>
+    <!-- 서브페이지 타이틀 : 01. 교회안내 -->
+    <nav class="nav_2nd">
+        <span>교회 안내</span>
+    </nav>
+    <nav class="nav_3rd">
+        <ul>
+            <li <% if(title === 'church'){ %>class="on"<% } %>><a href="church.html">교회 소개</a></li>
+            <li <% if(title === 'new_family'){ %>class="on"<% } %>><a href="new_family.html">새가족 안내</a></li>
+            <li <% if(title === 'worship_schedule'){ %>class="on"<% } %>><a href="worship_schedule.html">예배 안내</a></li>
+            <li <% if(title === 'servantofgod'){ %>class="on"<% } %>><a href="servantofgod.html">섬기는 분들</a></li>
+            <li <% if(title === 'sunday_school'){ %>class="on"<% } %>><a href="sunday_school.html">교육 기관</a></li>
+            <li <% if(title === 'coramdeo'){ %>class="on"<% } %>><a href="coramdeo.html">청년선교회</a></li>
+            <li <% if(title === 'church_groups'){ %>class="on"<% } %>><a href="church_groups.html">교구/전도회</a></li>
+            <li <% if(title === 'facilities'){ %>class="on"<% } %>><a href="facilities.html">교회 시설</a></li>
+            <li <% if(title === 'map'){ %>class="on"<% } %>><a href="map.html">오시는 길</a></li>
+        </ul>
+    </nav>
+<% } %>
+<% if(cate==='02') { %>
+    <!-- 서브페이지 타이틀 : 02.예배와 훈련 -->
+    <nav class="nav_2nd<% if(title==='worship_view'){%> video<%}%>">
+        <span>예배와 훈련</span>
+    </nav>
+    <nav class="nav_3rd<% if(title==='worship_view'){%> video<%}%>">
+        <ul>
+            <li <% if(title === 'worship_view'){ %>class="on"<% } %>><a href="worship_view.html">주일예배</a></li>
+            <li <% if(title === 'worship_wed'){ %>class="on"<% } %>><a href="worship_wed.html">수요예배</a></li>
+            <li><a href="#">금요기도회</a></li>
+            <li><a href="#">새벽기도회</a></li>
+            <li><a href="#">원단메세지</a></li>
+            <li><a href="#">담임목사 특강</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL0gm9trgGeD7mAzBZ3EEk2ZDXXiQqhmPB" target="_blank">훈련메세지 <img class="icon_youtube_gray" alt=""></a></li>
+            <li><a href="https://www.youtube.com/channel/UCCg-dy8oIETGwY8bdRN3o7A" target="_blank">예원찬양 <img class="icon_youtube_gray" alt=""></a></a></li>
+        </ul>
+    </nav>
+<% } %>
+<% if(cate==='03') { %>
+    <!-- 서브페이지 타이틀 : 03.교회 소식 -->
+    <nav class="nav_2nd">
+        <span>교회 소식</span>
+    </nav>
+    <nav class="nav_3rd">
+        <ul>
+            <li <% if(title === 'focus'){ %>class="on"<% } %>><a href="focus.html">예원 포커스</a></li>
+            <li <% if(title === 'news'){ %>class="on"<% } %>><a href="news.html">예원 뉴스</a></li>
+            <li <% if(title === 'institution'){ %>class="on"<% } %>><a href="institution.html">기관 소개</a></li>
+            <li <% if(title === 'weekly_bulletin'){ %>class="on"<% } %>><a href="weekly_bulletin.html">주보</a></li>
+            <li <% if(title === 'testimony'){ %>class="on"<% } %>><a href="testimony.html">신앙 간증</a></li>
+            <li><a href="#">현장 포럼</a></li>
+            <li <% if(title === 'notice'){ %>class="on"<% } %>><a href="notice.html">공지사항</a></li>
+            <li <% if(title === 'archive'){ %>class="on"<% } %>><a href="archive.html">자료실</a></li>
+        </ul>
+    </nav>
+<% } %>
+<% if(cate==='04') { %>
+<!-- 서브페이지 타이틀 : 04.국내외 사역-->
+<nav class="nav_2nd">
+    <span>국내외 사역</span>
+</nav>
+<nav class="nav_3rd">
+    <ul>
+        <li <% if(title === 'ministry_237'){ %>class="on"<% } %>><a href="ministry_237.html">해외 선교 현황</a></li>
+        <li <% if(title === 'ministry_ngo'){ %>class="on"<% } %>><a href="ministry_ngo.html">NGO사역</a></li>
+        <li <% if(title === 'ministry_healing'){ %>class="on"<% } %>><a href="ministry_healing.html">치유사역</a></li>
+        <li <% if(title === 'ministry_disabled'){ %>class="on"<% } %>><a href="ministry_disabled.html">장애인사역</a></li>
+        <li <% if(title === 'ministry_special'){ %>class="on"<% } %>><a href="ministry_special.html">전문교회</a></li>
+        <li <% if(title === 'ministry_wedding'){ %>class="on"<% } %>><a href="ministry_wedding.html">결혼예배안내</a></li>
+        <li <% if(title === 'ministry_funeral'){ %>class="on"<% } %>><a href="ministry_funeral.html">장례예배안내</a></li>
+    </ul>
+</nav>
+<% } %>
+<% if(cate==='05') { %>
+        <!-- 서브페이지 타이틀 : 05.World Missions -->
+        <nav class="nav_2nd">
+            <span>World Missions</span>
+        </nav>
+        <nav class="nav_3rd">
+            <ul>
+                <li <% if(title === 'imnew'){ %>class="on"<% } %>><a href="imnew.html">I'm new</a></li>
+                <li><a href="#">Overseas Mission</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Japanese</a></li>
+                <li><a href="#">Russian</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">Indonesian</a></li>
+                <li><a href="#">Chinese</a></li>
+            </ul>
+        </nav>
+<% } %>

@@ -3,56 +3,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/font.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/board.css" />
-<% if(cate==='01') { %>
-    <% if(title==='column') { %>
-    <link rel="stylesheet" href="../css/cont_text.css" />
-    <% } else { %>
-    <link rel="stylesheet" href="../css/cont_info.css" />
-    <% } %>
-<% } %>
-<% if(cate==='02') { %>
-    <link rel="stylesheet" href="../css/cont_video.css" />
-<% } %>
-<% if(cate==='03') { %>
-    <% if(title==='focus') { %>
-    <link rel="stylesheet" href="../css/cont_gallery.css" />
-    <% } else if(title==='news') { %>
-    <link rel="stylesheet" href="../css/cont_video.css" />
-    <% } else if(title==='institution') { %>
-    <link rel="stylesheet" href="../css/cont_video_link.css" />
-    <% } else { %>
-    <link rel="stylesheet" href="../css/cont_text.css" />
-    <% } %>
-<% } %>
-<% if(cate==='04' || cate==='05') { %>
-    <link rel="stylesheet" href="../css/cont_info.css" />
-<% } %>
-<% if(cate==='app') { %>
-    <link rel="stylesheet" href="../css/app.css" />
-<% } %>
-<% if(cate==='main') { %>
-    <link rel="stylesheet" href="../css/main.css" />
-<% } %>
-    <link rel="stylesheet" href="../css/mediaquery.css" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/cont_info.css" />
+    <link rel="stylesheet" href="/css/mediaquery.css" />
     <script src="https://kit.fontawesome.com/a59e784e22.js" crossorigin="anonymous"></script>
-    <script src="../js/common.js" defer></script>
-    <script src="../js/info.js" defer></script>
-<% if(cate==='main') { %>
-    <script src="../js/main.js" defer></script>
-<% } %>
+    <script src="/js/common.js" defer></script>
+    <script src="/js/info.js" defer></script>
     <title>예수님이 원하시는 교회, 예원교회입니다.</title>
 </head>
 <body>
 
     <!-- menu include -->
-    <%- include('./inc_menu.ejs') %>
+    @@include('inc_menu.ejs')
 
     
     <!-- 헤더 -->
-    <header <% if(cate!='main'){%> class="sub"<%}%>>
+    <header class="sub">
         <div class="hCenter">
             <div class="logo">
                 <a href="index.html"><img class="logo_yewon" alt="예원교회CI">
@@ -97,13 +64,13 @@
                         <li><a href="archive.html">자료실</a></li>
                     </ul>
                     <ul>
-                        <li><a href="ministry_237.html">해외 선교 현황</a></li>
-                        <li><a href="ministry_ngo.html">NGO사역</a></li>
-                        <li><a href="ministry_healing.html">치유사역</a></li>
-                        <li><a href="ministry_disabled.html">장애인사역</a></li>
-                        <li><a href="ministry_special.html">전문교회</a></li>
-                        <li><a href="ministry_wedding.html">결혼예배안내</a></li>
-                        <li><a href="ministry_funeral.html">장례예배안내</a></li>
+                        <li><a href="#">해외 선교 현황</a></li>
+                        <li><a href="#">NGO사역</a></li>
+                        <li><a href="#">치유사역</a></li>
+                        <li><a href="#">장애인사역</a></li>
+                        <li><a href="#">전문교회</a></li>
+                        <li><a href="#">결혼예배안내</a></li>
+                        <li><a href="#">장례예배안내</a></li>
                     </ul>
                     <ul>
                         <li><a href="imnew.html">I'm New</a></li>
@@ -124,8 +91,5 @@
         </div>
     </header>
 
-    <%- include('./inc_title.ejs', {
-        cate: cate,
-        title: title
-    }) %>
     
+    @@include('inc_title.ejs', { title: title, cate:cate })
