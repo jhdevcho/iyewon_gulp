@@ -1,0 +1,162 @@
+
+/* 갤러리형 게시판 관련 */
+
+
+/* 검색 영역 */
+.searchArea{
+    padding: 50px 15px 30px 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* 리스트 영역 */
+.listArea.gallery{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.listArea.gallery .list{
+    display: block;
+    padding: 25px 15px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* border-bottom: 1px solid var(--grey-light-color); */
+}
+.listArea.gallery .list .cont{
+    width: 100%;
+    padding: 12px 0;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.listArea.gallery .list .cont p.title {
+    width: 100%;
+    display: inline-block;
+    font-family: var(--fontfam-title);
+    font-size: 24px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.listArea.gallery .list .cont p.img{
+    width: 100%;
+    padding: 15px 0;
+}
+.listArea.gallery .list .cont p.img img{    
+    width: 100%;
+}
+.listArea.gallery .list .cont p.text{    
+    font-size: 15px;
+    line-height: 22px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+}
+.listArea.gallery .list .cont p.date{    
+    font-size: 14px;
+    padding: 10px 0;
+    color: var(--grey-dark-color);
+}
+.moreBtn{
+    padding: 30px 15px;
+}
+.moreBtn button{
+    width: 100%;
+    border: 1px solid var(--grey-dark-color);
+    border-radius: 5px;
+    padding: 15px 0;
+    text-align: center;
+}
+/* 뷰 */
+.viewArea.gallery{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.viewArea.gallery .metadata{
+    padding: 70px 15px 0 15px;
+}
+.viewArea.gallery .metadata p.title{
+    font-family: var(--fontfam-m-text);
+    font-size: 27px;
+    line-height: 35px;
+}
+.viewArea.gallery .metadata p.whenwho{
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--grey-dark-color);
+    padding: 10px 0;
+}
+.viewArea.gallery .content{
+    width: 100%;
+    padding: 30px 15px;
+}
+.viewArea.gallery .content p,
+.viewArea.gallery .content span {
+    font-size: 17px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+}
+.viewArea.gallery .content img {
+    width: 100%;
+}
+.viewArea.gallery .contLinks{
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    font-size: 15px;
+}
+.viewArea.gallery .contLinks div a{
+    display: flex;
+    align-items: center;
+}
+.viewArea.gallery .contLinks span.info{
+    font-family: var(--fontfam-title);
+    padding-left: 5px;
+    width: 50px;
+    flex-shrink: 0;
+}
+.viewArea.gallery .contLinks span.title{
+    color: var(--grey-dark-color);
+    padding: 0 5px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-shrink: 2;
+}
+.viewArea.gallery .otherLinks{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+.viewArea.gallery .otherLinks .share{
+    display: flex;
+    align-items: center;
+}
+.viewArea.gallery .otherLinks .share i{
+    font-size: 30px;
+    padding-right: 10px;
+}
+.viewArea.gallery .otherLinks .share span{
+    padding-right: 15px;
+    font-size: 15px;
+    font-family: var(--fontfam-title);
+}
+.viewArea.gallery .otherLinks .list a{
+    padding: 10px 50px;
+    border: 1px solid var(--grey-dark-color);
+    border-radius: 30px;
+    font-family: var(--fontfam-title);
+    font-size: 15px;
+}

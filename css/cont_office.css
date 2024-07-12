@@ -1,0 +1,150 @@
+
+/* 행정 관련 */
+
+.contentWrap{
+    width:100%;
+    font-size: 20px;
+}
+.wrap900{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+}
+.wrapWide{
+    width:100%;
+}
+.fRow{
+    display:flex;
+}
+.fColumn{
+    display:flex;
+    flex-direction: column;
+}
+
+/* em단위 폰트 지정 */
+.h1 {
+    font-family:"PretendardB";
+    font-size: 3.0em;
+    margin-bottom: 0;
+}
+.h2{
+    font-family:"PretendardB";
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+.h2-1{
+    font-family:"PretendardB";
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+.h3{
+    font-family:"PretendardB";
+    font-size: 1.5em;
+    line-height: 1.8em;
+    margin-bottom: 0;
+}
+.h4{
+    font-family:"PretendardB";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.h4-m{
+    font-family:"PretendardM";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.h5{
+    font-family:"PretendardR";
+    font-size: 0.85em;
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+.h6{
+    font-family:"PretendardM";
+    font-size: 0.7em;
+    line-height: 1.0em;
+    margin-bottom: 0;
+}
+.h6-r{
+    font-family:"PretendardR";
+    font-size: 0.7em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.fh1 {
+    font-family:"PretendardB";
+    font-size: 3.0em;
+    line-height: 0.9em;
+    margin-bottom: 0;
+}
+.fh2{
+    font-family:"PretendardB";
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+.fh3{
+    font-family:"PretendardB";
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+.fh4{
+    font-family:"PretendardB";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.fh4-m{
+    font-family:"PretendardM";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.fh5{
+    font-family:"PretendardR";
+    font-size: 0.8em;
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+.fh6{
+    font-family:"PretendardM";
+    font-size: 0.7em;
+    line-height: 1.0em;
+    margin-bottom: 0;
+}
+.bold{font-weight: bold;}
+
+/* margin */
+.mgt10 {margin-top:0.5em;}
+.mgt20 {margin-top:1.0em;}
+.mgt40 {margin-top:2.0em;}
+.mgt60 {margin-top:3.0em;}
+.mgbt10 {margin-bottom:0.5em;}
+.mgbt20 {margin-bottom:1.0em;}
+.mgbt30 {margin-bottom:1.5em;}
+.mgbt40 {margin-bottom:2.0em;}
+.mgbt60 {margin-bottom:3.0em;}
+.mgbt80 {margin-bottom:4.0em;}
+.pdl10 {padding-left:0.5em;}
+.pdl20px {padding-left:1.0em;}
+.pdt10 {padding-top:0.5em;}
+.pdt20 {padding-top:1.0em;}
+.pdt40 {padding-top:2.0em;}
+.pdt60 {padding-top:3.0em;}
+.pdt80 {padding-top:4.0em;}
+.pdbt10 {padding-bottom:0.5em;}
+.pdbt20 {padding-bottom:1.0em;}
+.pdbt40 {padding-bottom:2.0em;}
+.pdbt60 {padding-bottom:3.0em;}
+.pdbt80 {padding-bottom:4.0em;}
+
+/* align */
+.right{text-align:right;}
+
+/* colored style */
+.green-left{
+    border-left:2px solid var(--color-point-green);
+    padding-left:8px;
+}

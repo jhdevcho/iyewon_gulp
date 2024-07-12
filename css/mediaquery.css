@@ -1,0 +1,972 @@
+
+/* media query */
+/* 600px 이하 화면 */
+@media (max-width: 600px){
+    .menuLayer .mLinkBtns .forFam{
+        flex-wrap: wrap;
+    }
+    .menuLayer .mLinkBtns .forFam a {
+        width: 30%;
+        padding: 15px 0;
+        margin: 0 2px 4px 2px;
+    }
+    .menuLayer .mLinkBtns .forFam a img {
+        height: 34px;
+        padding-bottom: 4px;
+    }
+    .menuLayer .mFamLinks .mFamWrap {
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    .menuLayer .mFamLinks .mFamWrap a{
+        width:35%;
+        text-align:center;
+    }
+    .listArea.ytLink .list li {
+        width:100%;
+        padding: 20px;
+    }
+    /* .contentWrap.newFam{
+        font-size:16px;
+    }
+    .contentWrap.coramdeo{
+        font-size:16px;
+    } */
+    .h1 {font-size:2.4em;}
+    .contentWrap.newFam .h5{
+        font-size:0.85em;
+    }
+    .contentWrap.newFam .h6{
+        font-size:0.9em;
+    }
+    .reviewBanner .text .h4 {
+        font-size: 3vw !important;
+    }
+    .church .pastorProfile{
+        flex-direction: column;
+    }
+    .church .pastorProfile .img{
+        width:100%;
+        padding-top:20px;
+    }
+    .church .pastorProfile .text{
+        width:100%;
+        padding-top:20px;
+        margin-left:20px;
+    }
+    /* 청년선교회 페이지 */
+    .coramdeo .videoLink .exp{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5em 1.0em;
+    }
+    .coramdeo .videoLink .exp p{
+        font-size: 0.8em !important;
+    }
+    .coramdeo .wrapWide .links a img {
+        width:30%;
+        padding: 7px 0;
+    }
+    /* 교회부설 교육기관 */
+    
+    .edu_inst .emphasis, .church_group .emphasis{
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .edu_inst .emphasis .title, .church_group .emphasis .title{
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .servant .wrap_card.big .exp{
+        padding-left:20px;
+        padding-top:10px;
+    }
+    /* 주일예배 스킨 (주일예배,금요기도회,원단메세지,담임목사 특강) - 플레이어 하단 버튼 관련 */
+    .viewArea .videoplayer .links .fileWrap{
+        position: absolute;
+        width: 145px;
+        height: 22px;
+        overflow: hidden;
+        left: 0px;
+    }
+    .viewArea .videoplayer .links.on .fileWrap{
+        overflow:visible;
+    }
+    .viewArea .videoplayer .links.on button span{
+        display:inline-block;
+        transform:rotate(180deg);
+    }
+    .viewArea .videoplayer .links .fileWrap .files{
+        display: flex;
+        flex-direction: column;
+        background: var(--black-color);
+        padding-bottom: 10px;
+    }
+    .viewArea .videoplayer .links .fileWrap .files button{
+        display:block;
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 5px;
+    }
+    .viewArea .videoplayer .links .files a{
+        font-size: 15px;
+        color:white;
+        font-family: var(--fontfam-regular);
+        padding: 8px 5px;
+        text-align: center;
+        border:0px;
+    }
+}
+/* 700px 이하 화면 */
+@media (max-width: 700px){
+    .menuLayer {
+        transition-duration: 0.5s;
+    }
+    /* header.sub .logo {display:none;}
+    header.sub .back {display:block;} */
+    header.sub .logo .f_yewon {display:none;}
+    .nav_2nd{
+        padding: 78px 15px 0 15px;
+    }
+    .nav_2nd span{
+        margin-left:0;
+        font-size: 27px;
+    }
+    .nav_3rd ul li{
+        font-size: 17px;
+    }
+    .nav_3rd ul li.on{
+        font-size: 17px;
+    }    
+    .listArea .list .cont{    
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .listArea .list .cont p.title {
+        flex-direction: column;
+        font-size: var(--font-large);
+    }
+    .listArea .list .cont p.title span.verses {
+        padding-top:5px;
+    }
+    .listArea .list .cont p.date {    
+        /* padding-top: 5px; */
+        font-size: var(--font-mobile-small);
+    }
+    .listArea .list .cont p span{
+        font-size: var(--font-regular);
+    }
+    .viewArea .metadata{
+        padding: 0 10px 0 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .viewArea .metadata p.title{
+        flex-direction: column;
+    }
+    .viewArea .videoplayer{
+        padding: 10px;
+    }
+    /* .viewArea .links a{
+        font-size: 14px;
+        padding: 8px 16px;
+    } */
+    .viewArea .recordedText span{
+        font-size: 16px !important;
+        line-height: 1.5;
+    }
+    .listArea.viewer .list {
+        padding: 25px 0;
+    }
+    .listArea.viewer .list .cont p.title {
+        font-size: 20px;
+    }
+    .listWrap.viewer .list .cont p span.verses{
+        display:block;
+        padding-left:0px;
+    }
+    input, select {
+        font-size: 17px;
+    }
+    .selectWrap {    
+        width: 110px;
+    }
+    .searchWrap {    
+        width: 205px;
+    }
+    .searchArea .searchPastor {
+        width: 200px;
+    }
+    .searchArea .searchPastor .selectWrap {    
+        width: 150px;
+    }
+    .searchArea .searchBible {
+        width: 200px;
+    }
+    .searchArea .searchBible .selectWrap {    
+        width: 150px;
+    }
+    .selectWrap:has(+.searchDate){    
+        width: 80px;
+    }
+    .searchArea .searchDate {
+        width: 240px;
+    }
+    .searchArea .searchDate .selectWrap {
+        width: 108px;
+    }
+    .searchArea .searchDate .selectWrap:nth-child(2) {
+        width: 80px;
+    }
+    /* 검색 종류 고르는 영역- 날짜일때&모바일일때 줄이는 용도 */
+    .selectWrap.date {    
+        width: 80px;
+    }
+    .viewArea.gallery .contLinks,
+    .viewArea.combi .contLinks{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .viewArea.combi .contLinks>div{
+        width:100%;
+    }
+    .viewArea .contLinks div a i{
+        display: none;
+    }
+    .viewArea .contLinks .preCont{
+        padding-bottom: 15px;
+    }
+    .viewArea.gallery .otherLinks,
+    .viewArea.combi .otherLinks{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .viewArea .otherLinks .share{
+        padding-bottom: 20px;
+    }
+    .viewArea .otherLinks .list{
+        width: 100%;
+        text-align: right;
+    }
+    .listArea.textBox .list .cont {
+        padding: 20px;
+    }
+    .listArea.textBox .list .cont p.title,
+    .listArea.textBox .list .cont p.date{
+        width: 100%;
+    }
+    /* 공지사항 */
+    .listArea.textThumb .list .cont{
+        flex-direction:row;
+        padding: 20px 15px;
+    }
+    .listArea.textThumb .list .cont .exp{
+        flex-direction:column;
+        align-items: flex-start;
+    }
+    .listArea.textThumb .list .cont p span{
+        font-size: inherit;
+    }
+    /* .listArea.textThumb .list .cont p.title{
+        padding: 10px 0 0 0;
+    } */
+
+    .scene03 .section01{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .scene03 .section01 .photo{
+        text-align:left;
+        padding: 0;
+        width: 100%;
+    }
+    .scene03 .section01 .photo img{
+        width: 80vw;
+        max-width: 500px;
+    }
+    .scene03 .section01 .text{
+        width: 100%;
+        padding: 10vw;
+    }
+
+    .scene03 .section02{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .scene03 .section02 .photo{
+        text-align:right;
+        padding: 0;
+        width: 100%;
+    }
+    .scene03 .section02 .photo img{
+        width: 80vw;
+        max-width: 500px;
+    }
+    .scene03 .section02 .text{
+        width: 100%;
+        padding: 8vw;
+    }
+
+
+    .scene05 .image .bartizan{
+        left:50vw;
+    }    
+    .scene05 .text .top {
+        height: 30vh;
+        align-items: flex-start;
+        padding-left:8vw;
+    }
+    .scene05 .text .bottom {
+        height: 70vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:2vh;
+    }
+    .scene05 .text .bottom .left{
+        text-align:left;
+        padding:0 0 10vw 8vw;
+        animation:none;
+    }
+    .scene05 .text .bottom .right{
+        text-align:left;
+        padding:0 0 10vw 8vw;
+        animation:none;
+    }
+
+    .scene06 .section01 .photo.inside, .scene06 .section02 .photo.inside{
+        display:block;
+    }
+    .scene06 .section01 .photo.outside, .scene06 .section02 .photo.outside{
+        display:none;
+    }
+    .scene06 .section01 .text, .scene06 .section02 .text{
+        text-align:center;
+        width: 100%;
+    }
+    .scene06 .section02 .photo{
+        text-align:center;
+    }
+
+    .mainWrap .floatBtn .quick .button_quick,.mainWrap .floatBtn .quick .button_close {
+        width:59px;
+    } 
+    .mainWrap .floatBtn .counsel img{
+        content: url("/images/icon_counsel_small.svg");
+    }
+
+    /* 정보성 페이지 공통 */
+
+    /* 새가족 안내 페이지 */
+    .newFam .greenBox, 
+    .cont_map .greenBox,
+    .imNew .greenBox,
+    .ministry .greenBox{
+        flex-direction:column;
+        /* align-items: flex-start; */
+        align-items: stretch;
+    }
+    .newFam .greenBox .greenRight, 
+    .cont_map .greenBox .greenRight,
+    .imNew .greenBox .greenRight{
+        flex-direction: row;
+        width: 100%;
+        padding: 1em;
+        justify-content: center;
+    }
+    .newFam .greenBox .greenRight span, 
+    .cont_map .greenBox .greenRight span,
+    .imNew .greenBox .greenRight span{
+        display: inline;
+        padding-right: 0.3em;
+    }
+    .contentWrap.newFam .pinkBox{
+        flex-direction:column;
+        align-items: flex-start;
+    }
+    .contentWrap.newFam .pinkBox .pinkRight{
+        flex-direction: row;
+        width: 100%;
+        padding: 1em;
+        justify-content: center;
+    }
+    .contentWrap.newFam .pinkBox .pinkRight span{
+        display: inline;
+        padding-right: 0.3em;
+    }
+    .contentWrap.newFam .pWrap.guide4w {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom:0.5em;
+    }
+    .contentWrap.newFam .pWrap.apply {
+        flex-direction: column;
+    }
+    .contentWrap.newFam .pWrap.apply .text {
+        padding-left:0;
+    }
+    .wrapWide .new_links {
+        flex-direction: column;
+    }
+    .wrapWide .new_links .linkRight{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;        
+        padding-top:30px;
+    }
+    .wrapWide .new_links .linkRight a{
+        width:40%;
+    }
+    .imNew .wrapWide .new_links .linkRight a{
+        width:auto;
+    }
+    .wrapWide .new_links .linkRight a:first-child{
+        margin-right:10px;
+    }
+    .wrapWide .new_links .h3{
+        font-size:2.0em;
+        text-align:center;
+        line-height:1.8em;
+    }
+    .wrapWide .new_links .h3 span{
+        display:block;
+        line-height:1.2em;
+    }
+    .wrapWide .new_links .linkLeft {
+        align-items: center;
+    }
+    /* 성도혜택 페이지 */
+    .contentWrap.ywFam .benefit li{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contentWrap.ywFam .benefit li .text{
+        padding-left:0;
+        padding-top:20px;
+    }
+    /* 교회소개페이지 */
+    .church .vision5{
+        flex-direction:column;
+    }
+    .church .vision5 .img{
+        width:100%;
+    }    
+    .church .pastorIntro{
+        flex-direction:column-reverse;
+    }
+    .church .pastorIntro .img,.church .pastorIntro .text{
+        width:100%;
+    }
+    /* 청년선교회 페이지 */
+    .coramdeo .videoLink .exp p{
+        font-size:1.0em;
+    }
+    .coramdeo .greenBox{
+        flex-direction: column;
+    }
+    .coramdeo .greenBox .title{
+        width:100%;
+        padding:10px 20px;
+        text-align:left;
+    }
+    .coramdeo .greenBox .exp{
+        width:100%;
+        padding:20px;
+    }
+    /* 예배안내 */
+    .schedule .table .tr .td_right{
+        flex-direction: column;
+        padding-left:20px;
+    }
+    .schedule .table .tr .td_right .td.when{
+        flex: 0 1 auto;
+        padding-bottom:10px;
+    }
+    .schedule .table .tr .td_right .td.where{
+        flex: 1 1 auto;
+    }
+    /* 섬기는 이 - 직원 */
+    .office .table .tr .td_right{
+        flex-direction: column;
+        padding-left:20px;
+    }
+    .office .table .tr .td_right .td.when{
+        flex: 0 1 auto;
+        padding-bottom:10px;
+    }
+    .office .table .tr .td_right .td.where{
+        flex: 1 1 auto;
+    }
+    /* 교회부설 교육기관 */    
+    .edu_inst .fRow .exp{
+        padding-left:10px;
+    }
+    .edu_inst .fRow.gls{
+        flex-wrap: wrap;
+    }
+    /* office */    
+    .info_box{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    /* .info_box .info_btn{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .info_box .info_btn .btn{
+        padding: 20px 10px 20px 30px;
+    }
+    .info_box .info_btn .btn:first-child{
+        border-right:1px solid var(--black-color);
+        border-bottom:0;
+        flex-grow: 2;
+    } */
+    .office .table.type6 .tr .td.what{
+        flex:0 0 120px;
+    }
+}
+/* 800px 이하 화면 */
+@media (max-width: 800px){
+    .mFamLinks .mFamWrap {
+        justify-content: space-around;
+    }
+    .mFamLinks .mFamWrap a img {
+        height: 40px;
+    }
+    .reviewBanner .img {
+        width:35%;
+    }
+    .reviewBanner .text{
+        padding: 5vw 4vw;
+    }
+    .reviewBanner .text .h2{
+        font-size:5vw;
+    }
+    .reviewBanner .text .h4{
+        font-size:2vw;
+    }
+    .imNew .wrapWide .info .platform{
+        flex-direction: column;
+        padding-bottom:40px;
+    }
+    .imNew .platform .img{
+        width:100%;
+        padding-right:0;
+    }
+    .imNew .platform .text{
+        width:100%;
+    }    
+    /* 청년선교회 페이지 */
+    .coramdeo .wrapWide .links a {
+        padding:0.5em;
+    }
+    /* 어린이 문화교실 */
+    .cultural_class .exp{
+        max-width:100%;
+    }
+    .cultural_class .exp.r_side{
+        padding-left:0;
+    }
+    .cultural_class .exp.l_side{
+        padding-right:0;
+    }
+    
+}
+/* 800px 이상 화면 */
+@media (min-width: 800px) {
+    .menuLayer .mCategory .mCateWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .menuLayer .mCategory .mCateWrap>div {
+        flex-grow: 2;
+    }
+    .menuLayer .mCategory .mCateWrap>div.cate5 {
+        flex-grow: 1;
+    }
+    .menuLayer .mCategory ul, .menuLayer .mCategory .cate:nth-of-type(1) ul{
+        height: auto;
+    }
+    .menuLayer .mCategory ul, .menuLayer .mCategory .cate:nth-of-type(2) ul{
+        height: auto;
+    } 
+    .menuLayer .mCategory ul, .menuLayer .mCategory .cate:nth-of-type(3) ul{
+        height: auto;
+    } 
+    .menuLayer .mCategory ul, .menuLayer .mCategory .cate:nth-of-type(5) ul{
+        height: auto;
+    }
+    .menuLayer .mCategory ul li{
+        width: auto;
+    }
+    .menuLayer .mOffice .btns a,.menuLayer .mOffice .btns a.online {
+        width: 20%;
+    }
+    .menuLayer .mOffice .btns a{        
+        border-bottom: 1px solid var(--grey-light-color);
+    }
+    
+    .menuLayer .mOffice .btns a:nth-child(3){
+        border-left:0;
+    }
+}
+/* 1000px 이상 화면 */
+@media (min-width: 1000px){ 
+    header .hCenter .menu{
+        display: block;
+    }
+}
+/* 900 이하 화면(정보성페이지) */
+@media (max-width: 900px){    
+    .wrap900{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    } 
+    .imNew .wrapWide .info{
+        padding:70px 15px 50px;
+    }
+    /* 주일학교 */    
+    .sunday_school .fixed_illust{
+        right:10px;
+    }
+}
+/* 1100px 이하 화면*/
+@media (max-width: 1100px){ 
+    .viewArea .dataWrap .data0{
+        width: 100%;
+        padding:10px;
+    }
+    .viewArea .dataWrap .data1{
+        width: 100%;
+        padding:10px;
+    }
+    .viewArea .dataWrap .data2{
+        width: 100%;
+        padding: 20px;
+    }
+}
+/* 450 이하 모바일화면 */
+@media (max-width:450px){     
+    /* 기본폰트 크기 */
+    .contentWrap{
+        font-size:18px;
+    }
+    /* 아이콘 크기 */
+    .icon_arrow_long_white{
+        transform:scale(0.8);
+    }
+    .icon_arrow_long_black{
+        transform:scale(0.6);
+    }
+    .icon_arrow_long_green{
+        transform:scale(0.8);
+    }
+    .greenBox .greenLeft{
+        padding: 1.5em 1.0em;
+    }
+    .pinkBox .pinkLeft{
+        padding: 1.5em 1.0em;
+    }    
+    .imNew .info .fh1{
+        font-size:2.5em;
+    }   
+    /* 성도혜택 페이지 */
+    .contentWrap.ywFam .h1 span{
+        display: block;
+    } 
+    /* 공지사항 */    
+    .listArea.textThumb .list .cont .no{
+        display:none;
+    } 
+    .listArea.textThumb .list .cont .thumb img {
+        width: 90px;
+        height: 90px;
+    }
+    /* 청년선교회 페이지 */
+    .coramdeo .videoLink{
+        flex-direction: column;
+    }
+    .coramdeo .videoLink .thumb{
+        width:100%;
+    }
+    .coramdeo .videoLink .exp{
+        width:100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .coramdeo .wrapWide .links {
+        flex-direction: column;
+    }
+    .coramdeo .wrapWide .links a{
+        width:100%;
+        margin-bottom:10px;
+    }
+    .coramdeo .wrapWide .links a img{
+        width:15%;
+    }
+    .coramdeo .wrapWide .links a p{
+        width:50%;
+        font-size:1.0em;
+    }
+    /* 섬기는분들 */
+    .servant .wrap_card .card .img{
+        width: 120px;
+        /* height: 152px; */
+    }
+    /* 교구/전도회 */
+    .church_group .h1 {
+        font-size:2.8em;
+    }
+
+    /* 교회시설 */
+    .facilities .buildings button{
+        font-size:17px;
+        width:95px;
+    }
+    .facilities .floor li .num{
+        flex-basis:95px;
+    }
+    .facilities .floor li .exp{
+        padding: 15px 15px;
+    }
+
+    /* 예배안내 */
+    .schedule .table .tr .td_right{
+        padding-left:10px;
+    }
+    .schedule .table .td.what span{
+        display: block;
+    }
+    .schedule .table .tr .td.what{
+        padding-left:10px;
+    }
+    .schedule .table.type2 .td.what{
+        flex: 0 0 95px;
+    }
+    .schedule .table.type3 .td.what{
+        flex: 0 0 120px;
+    }
+    .schedule .table.type4 .td.what{
+        flex: 0 0 120px;
+    }
+    /* 오시는 길 */
+    .cont_map .path>.img{
+        flex:0 0 70px;    
+        padding:0 15px 0 3px;
+    }
+    /* 주일학교 */    
+    /* .sunday_school .fixed_illust{
+        bottom:50px;
+        height: 350px;
+        right: -20px;
+    }
+    .sunday_school .fixed_illust img{
+        width:60%;
+    } */
+    .sunday_school .fixed_illust{
+        display:none;
+    }
+    .sunday_school .fixed_illust_bt{
+        display:flex;
+    }
+    /* I'm new */
+    .imNew .worship .img{
+        padding-right:0;
+    } 
+    /* 장례예배 안내 */
+    .ministry .flow .square{
+        width:110px;
+    }
+}
+/* 359 이하 작은 화면용 (320 특화) */
+@media (max-width:359px){    
+    .contentWrap{
+        font-size:17px;
+    }
+    .contentWrap.coramdeo{
+        font-size:17px;
+    }
+    .contentWrap.servant{
+        font-size:16px;
+    }
+    .wrap900 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    .contentWrap.newFam .wrapWide .new_links .linkRight a{
+        width:50%;        
+    }
+    /* 장례예배 안내 */
+    .ministry .flow .square{
+        width:96px;
+    }
+}
+ 
+/* 메인 효과들 */
+
+@media (max-width:359px) {  
+    .mainWrap {
+        font-size: 13px;
+    }   
+    .mainWrap a.btn{
+        padding: 12px 35px;
+        font-size: 1.0em;
+    }
+    .scene01 .step2 a.btn{
+        border-radius: 30px;
+        padding: 12px 30px;
+        margin: 0 6px;
+    }
+    .scene02 .section02{
+        padding-top:5vh;
+    }
+    .scene04 .section02 .text p img{
+        width: 90%;
+    }
+    .scene07 .text {
+        top: 15vh;
+    }
+    .scene07 .buttons a {
+        padding: 0.8em 1.2em;
+        font-size: 0.8em;
+    }
+    .scene07.step2 .txtFrame.mgbtSem {
+        margin-bottom: 0.8em;
+    }
+}
+@media (min-width:360px) and (max-width:469px) {  
+    .mainWrap {
+        font-size: 14px;
+    }   
+    .mainWrap .h3{
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
+    .mainWrap .h4{
+        font-size: 1.0em;
+    }
+    .mainWrap a.btn{
+        padding: 12px 35px;
+        font-size: 1.0em;
+    }
+    .scene01 .step2 a.btn{
+        border-radius: 30px;
+        padding: 12px 30px;
+        margin: 0 6px;
+    }
+    .scene01 .scene01Bg .bgImg.step01{
+        width: 42vh;
+        height: 40vh;
+    }
+    .scene07.step2 .scene07Bg .bgImg{
+        width: 42vh;
+        height: 40vh;
+    }
+    .scene02 .section02{
+        padding-top:5vh;
+    }
+    .scene02 .section02 .cardWrap .reviewCard{
+        width: 66em;
+    }
+    .scene02 .section02 .cardWrap .reviewCard .card{
+        padding: 1.6em 1.5em;
+        width: 16em;
+        border-radius: 30px;
+    }
+    .scene02 .section02 .cardWrap .reviewCard .card .h3{
+        font-size: 1.2em;
+    }
+    .scene02 .section02 .cardWrap .reviewCard .card .cont{
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+    .scene07 .text {
+        top: 15vh;
+    }
+    .scene07 .buttons a {
+        padding: 0.8em 1.2em;
+        font-size: 0.8em;
+    }
+    .scene07.step2 .txtFrame.mgbtSem {
+        margin-bottom: 1.0em;
+    }
+}
+@media (min-width:470px) and (max-width:599px) {   
+    .mainWrap {
+        font-size: 19px;
+    }
+    .scene01 .step2 a.btn{
+        border-radius: 30px;
+        padding: 12px 30px;
+        margin: 0 6px;
+    }
+    .scene02 .section02{
+        padding-top:5vh;
+    }
+    .scene07 .text {
+        top: 15vh;
+    }
+}
+@media (min-width:600px) and (max-width:800px) { 
+    .mainWrap {
+        font-size: 22px;
+    }
+    .scene02 .section02{
+        padding-top:5vh;
+    }
+}
+@media (min-width:600px) and (max-width:800px)and (min-height:500px) and (max-height:699px) {
+    .mainWrap {
+        font-size: 19px;
+    }
+    .scene01 .step1{
+        top:15vh;
+    }
+    .scene01 .scene01Bg .bgImg.step01{
+        width: 40vh;
+        height: 38vh;
+    }
+}
+@media (min-width:800px) and (min-height:500px) and (max-height:699px){
+    .mainWrap {
+        font-size: 19px;
+    }
+    .scene01 .step1{
+        top:15vh;
+    }
+    .scene01 .scene01Bg .bgImg.step01{
+        width: 40vh;
+        height: 38vh;
+    }
+    /* .scene01 .step2{
+        top:12vh;
+    } */
+}
+@media (min-width:800px) and (min-height:700px) and (max-height:850px){
+    .mainWrap {
+        font-size: 22px;
+    }
+    .scene01 .step1{
+        top:15vh;
+    }
+    /* .scene01 .step2{
+        top:18vh;
+    } */
+}
+
+
+
+
+/* 화면크기가 가로 or 세로일때 컨텐츠 모드 */
+@media (orientation: landscape){
+    .main_s .mobile {display:none;}
+    .main_s .pc {display:block;}
+}
+@media (orientation: portrait){
+    .main_s .mobile {display:block;}
+    .main_s .pc {display:none;}
+}
